@@ -1,0 +1,44 @@
+.month {
+  padding-left: 10%;
+
+  &__caption {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20rem;
+    font-weight: 700;
+  }
+
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20rem;
+    font-weight: 500;
+
+    .no_data {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 20rem;
+      font-weight: 500;
+    }
+
+    .employee {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      color: #7E72F2;
+
+      &__dot {
+        margin: 10rem;
+        background: black;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 5rem;
+      }
+    }
+
+  }
+}

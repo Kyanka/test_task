@@ -1,0 +1,85 @@
+.list {
+
+  &__caption {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20rem;
+    font-weight: 700;
+  }
+
+  .no_data {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20rem;
+    font-weight: 500;
+  }
+
+  .employee {
+    &__name {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 20rem;
+      font-weight: 500;
+
+      &--active_true {
+        color: #7E72F2;
+      }
+    }
+
+    &__action {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 15rem;
+      font-weight: 400;
+
+      &--wrapper {
+        margin-bottom: 10rem;
+      }
+
+      &--text {
+        margin-left: 10rem;
+      }
+
+      &--input {
+        position: relative;
+
+        height: 10rem;
+        width: 10rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+      }
+
+      &--input::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1rem solid black;
+      }
+
+      &--input:checked::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: black;
+        transform: translate(-50%, -50%);
+        visibility: visible;
+      }
+    }
+  }
+}
+
